@@ -1,11 +1,17 @@
 h1 {
     text-align: center;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    text-transform: capitalize;
 }
 
 p {
     font-size: 1.6em;
     text-align: center;
     padding: 40% 0;
+    font-family: 'Spicy Rice', cursive;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0.5em;
 }
 
 .colorBox {
@@ -13,5 +19,4 @@ p {
     height: 300px;
     color: white;
     box-shadow: lightgreen 5px 5px 5px 5px;
-    
 }
