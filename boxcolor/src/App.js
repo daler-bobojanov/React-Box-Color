@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
 // Pseudocode:
 // - Update functional component to a class component (App.js)
@@ -12,15 +12,17 @@ class App extends Component {
     super(props);
 
     this.state = {
-      color: 'blue'
-    }
+      color: "blue"
+    };
   }
 
-  onChange = (event) => {
+  onChange = event => {
     this.setState({
-      color: 'orange'
-    })
-  }
+      color: "orange"
+    });
+  };
+
+  // Color randomizer
 
   render() {
     return (
@@ -34,10 +36,9 @@ class App extends Component {
         >
           <p>Click Me!</p>
         </div>
-      </div >
-    )
+      </div>
+    );
   }
 }
 
 export default App;
-
