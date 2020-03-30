@@ -12,14 +12,17 @@ class App extends Component {
     super(props);
 
     this.state = {
-      color: "blue"
+      color: "blue",
+      clickCounter: 0
     };
   }
 
   onChange = event => {
     this.setState({
-      color: "orange"
+      color: "orange",
+      clickCounter: this.state.clickCounter + 1
     });
+    console.log("click counter ===> " + this.state.clickCounter);
   };
 
   // Color randomizer
