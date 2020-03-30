@@ -22,6 +22,7 @@ class App extends Component {
       color: this.randColors(),
       clickCounter: this.state.clickCounter + 1
     });
+    event.preventDefault();
     console.log(
       "click counter ===> " +
         this.state.clickCounter +
@@ -49,6 +50,10 @@ class App extends Component {
     return colors[Math.floor(Math.random() * colors.length)];
   }
 
+  refreshPage() {
+    window.location.reload(false);
+  }
+
   render() {
     return (
       <div className="App">
@@ -60,6 +65,12 @@ class App extends Component {
           onClick={this.onChange}
         >
           <p>Click Me!</p>
+        </div>
+
+        <div className="btn">
+          <button type="button" onClick={this.refreshPage}>
+            Reset
+          </button>
         </div>
       </div>
     );

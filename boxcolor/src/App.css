@@ -20,3 +20,20 @@ p {
   color: red;
   box-shadow: lightgreen 5px 5px 5px 5px;
 }
+
+.btn {
+  margin-top: 1.6em;
+  text-align: center;
+  width: auto;
+}
+
+button {
+  border: 1px black solid;
+  font-size: 1.6em;
+  font-family: "Spicy Rice", cursive;
+}
+
+button:hover {
+  background-color: green;
+  color: white;
+}
