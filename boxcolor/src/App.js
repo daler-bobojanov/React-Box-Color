@@ -19,13 +19,35 @@ class App extends Component {
 
   onChange = event => {
     this.setState({
-      color: "orange",
+      color: this.randColors(),
       clickCounter: this.state.clickCounter + 1
     });
-    console.log("click counter ===> " + this.state.clickCounter);
+    console.log(
+      "click counter ===> " +
+        this.state.clickCounter +
+        " (" +
+        this.state.color +
+        ")"
+    );
   };
 
   // Color randomizer
+  randColors() {
+    const colors = [
+      "salmon",
+      "yellow",
+      "black",
+      "aqua",
+      "white",
+      "pink",
+      "rebeccapurple",
+      "tan",
+      "teal",
+      "yellowgreen",
+      "indigo"
+    ];
+    return colors[Math.floor(Math.random() * colors.length)];
+  }
 
   render() {
     return (
